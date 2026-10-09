@@ -20,9 +20,18 @@
     --gradient:linear-gradient(135deg, #0866d8, #38bdf8);
     --shadow: 0 10px 30px rgba(8, 102, 216, 0.12);
     --transition: 0.3s ease;
+    --bs-primary-fg: light-dark(var(--bs-blue-600), var(--bs-blue-400));
+    --bs-blue-600: color-mix(in oklch, var(--bs-black) 16%, oklch(60% .24 240));
+--bs-blue-400: color-mix(in oklch, var(--bs-white) 20%, oklch(60% .24 240));
+}
+a{
+    text-decoration: none;
+}
+.border{
+    border-color: var(--bs-primary-fg);
 }
 .protfolio{
-    color:var(--blue-dark);
+    color:var(--text);
     font-weight:600;
     font-family: "Orbitron", sans-serif;
     font-size:20px;
@@ -30,3 +39,6 @@
 .blue{color: var(--blue);}
 .navbar .nav-link:hover, .navbar .nav-link.active {
     color: var(--blue)}
+.btn-text:hover {
+    border-color: var(--bs-primary-fg);
+}
