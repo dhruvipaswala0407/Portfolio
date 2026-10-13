@@ -8,6 +8,13 @@ html {
 body{
     background-color: var(--bg-main);
 }
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--bg-main); 
+}
+
 :root {
     --bg-main: #121212;
     --bg-card: #231B18;
@@ -15,13 +22,23 @@ body{
     --accent: #8C6D53;
     --text-primary: #F4EAE1;
     --text-secondary: #B8A89C;
+    --text-muted: #8E7D72;        
+  --text-highlight: #E6A068;    
+  --text-accent: #C29A78;     
+  --text-disabled: #5E5047;  
+  --text-on-accent: #121212;
 }
+a{
+    text-decoration: none;
+}
+
 .font-color1{
     color: var(--text-secondary);
 }
 .font-color{
     color:var(--text-primary);
 }
+/* navbar  */
 .navbar{
     background-color: var(--bg-card);
 }
@@ -31,4 +48,62 @@ body{
 .nav-underline .nav-link:focus, .nav-underline .nav-link:hover {
     border-bottom-color: var(--text-secondary);
     color:var(--text-secondary)
+}
+.btn{
+    color: var(--text-primary);
+    background-color:var(--border-subtle);
+    border-color: var(--accent);
+}
+.btn:hover{
+    color: var(--text-secondary);
+    background-color:var(--border-subtle);
+    border-color: var(--border-subtle);
+}
+/* hero-section */
+.card{
+    background-color: var(--bg-card);
+    border:1px solid var(--border-subtle);
+}
+.card-text{
+    color:var(--text-accent)
+}
+.font-color2{
+    color:var(--text-muted)
+}
+.breadcrumb-item{
+    color:var(--text-on-accent)
+}
+.fram{
+    width: 350px;     
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.img{
+   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* About Me */
+
+.about-img {
+    background: radial-gradient(circle,rgba(163, 138, 124, 1) 0%, rgba(75, 56, 42, 1) 74%);
+}
+
+.icon .icon-frame,
+.experience .card,
+.education .card ,.project-card,.hero-icon {
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+}
+.icon .icon-frame:hover,.hero-icon:hover{
+    background-color: #fff;
+}
+.about-me {
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+}
+.icon .icon-frame {
+    aspect-ratio: 1/1;
 }
