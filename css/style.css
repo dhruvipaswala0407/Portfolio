@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--bg-main);
+}
+:root {
+    --bg-main: #121212;
+    --bg-card: #231B18;
+    --border-subtle: #4B382A;
+    --accent: #8C6D53;
+    --text-primary: #F4EAE1;
+    --text-secondary: #B8A89C;
+}
+.font-color1{
+    color: var(--text-secondary);
+}
+.font-color{
+    color:var(--text-primary);
+}
+.navbar{
+    background-color: var(--bg-card);
+}
+.border-1{
+    border: 2px solid var(--border-subtle);
+}
+.nav-underline .nav-link:focus, .nav-underline .nav-link:hover {
+    border-bottom-color: var(--text-secondary);
+    color:var(--text-secondary)
+}
