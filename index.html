@@ -19,80 +19,97 @@
 <body>
     <header>
         <div class="container">
-            <div class="row">
-                <nav class="navbar rounded-4 border-1 m-2 p-2">
-                    <div class="col-3">
-                        <a class="navbar-brand" href="#home">
-                            <img src="./image/code (4).png" alt="Logo" width="30" height="30"
-                                class="d-inline-block align-text-top">
-                            <span class="font-color1">My<span class="font-color">Protfolio</span> </span>
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <ul class="nav justify-content-center nav-underline">
+            <nav class="navbar navbar-expand-lg rounded-4 border-1 m-2 px-3 py-2">
+                <div class="container-fluid">
+
+                    <a class="navbar-brand d-flex align-items-center" href="#home">
+                        <img src="./image/code (4).png" alt="Logo" width="30" height="30"
+                            class="d-inline-block align-text-top me-2">
+                        <span class="font-color1">My<span class="font-color">Portfolio</span></span>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon font-color1"><i class="ri-menu-line"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+
+                        <ul class="navbar-nav mx-auto nav-underline">
                             <li class="nav-item">
-                                <a class="nav-link font-color" aria-current="page" href="#home">Home</a>
+                                <a class="nav-link font-color " aria-current="page" href="#home">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link font-color" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link font-color" href="#">Skill</a>
+                                <a class="nav-link font-color" href="#skill">Skill</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link font-color" aria-disabled="true">Projects</a>
+                                <a class="nav-link font-color" href="#">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link font-color" aria-disabled="true">Contact</a>
+                                <a class="nav-link font-color" href="#">Contact</a>
                             </li>
                         </ul>
+                        <form class="d-flex mt-2 mt-lg-0">
+                            <button type="button" class="btn border-1 rounded-pill font-color">Let's Talk</button>
+                        </form>
+
                     </div>
-                    <div class="col-2">
-                        <button type="button" class="btn border-1 rounded-pill font-color">Let's Talk</button>
-                    </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </div>
     </header>
     <main>
         <!-- hero-section  -->
         <section class="home-section" id="home">
-            <div class="container">
-                <div class="row">
-                    <div class="card m-3 pt-3 py-3">
+            <div class="container px-2 px-sm-3">
+                <div class="row g-0">
+
+
+                    <div class="card my-3 mx-0 pt-3 py-3 overflow-hidden">
                         <div class="row g-0">
-                            <div class="col-md-8 col-5">
-                                <div class="card-body">
-                                    <p class="card-text">HI,I'M</p>
+
+                            <div class="col-12 col-md-8">
+                                <div class="card-body px-2 px-sm-3">
+                                    <p class="card-text">HI, I'M</p>
                                     <h1 class="card-title font-color1">Dhruvi Paswala</h1>
                                     <p class="card-text">Software Development</p>
-                                    <p class="card-text"><small class="font-color2">Currently learning software
-                                            development at Red & White and pursuing B.Sc. IT at Vidhyadeep University. I
-                                            love turning core concepts into interactive web apps.</small></p>
-                                    <button type="button" class="btn btn-warning">View Projects</button>
-                                    <button type="button" class="btn border-1 font-color">Contact Me</button>
+                                    <p class="card-text">
+                                        <small class="font-color2">Currently learning software development at Red &
+                                            White and pursuing B.Sc. IT at Vidyadeep University. I love turning core
+                                            concepts into interactive web apps.</small>
+                                    </p>
+
+                                    <div class="d-flex flex-wrap gap-2 my-3">
+                                        <button type="button" class="btn btn-warning">View Projects</button>
+                                        <button type="button" class="btn border-1 font-color">Contact Me</button>
+                                    </div>
+
                                     <nav aria-label="breadcrumb">
-                                        <ol class="breadcrumb p-2">
-                                            <li class="breadcrumb-item "><a class="font-color1" href="#"><i
+                                        <ol class="breadcrumb p-0 m-0">
+                                            <li class="breadcrumb-item"><a class="font-color1" href="#"><i
                                                         class="ri-html5-fill"></i></a></li>
-                                            <li class="breadcrumb-item "><a class="font-color1" href="#"><i
+                                            <li class="breadcrumb-item"><a class="font-color1" href="#"><i
                                                         class="ri-css3-fill"></i></a></li>
-                                            <li class="breadcrumb-item "><a class="font-color1" href="#"><i
+                                            <li class="breadcrumb-item"><a class="font-color1" href="#"><i
                                                         class="ri-bootstrap-fill"></i></a></li>
-                                            <li class="breadcrumb-item "><a class="font-color1" href="#"><i
+                                            <li class="breadcrumb-item"><a class="font-color1" href="#"><i
                                                         class="ri-github-fill"></i></a></li>
                                         </ol>
                                     </nav>
                                 </div>
                             </div>
 
-                            <div class="col-md-4 col-5">
+                            <div class="col-md-4 d-none d-md-block">
                                 <div class="fram">
                                     <img class="img" src="./image/myimage.png" alt="...">
                                 </div>
                             </div>
+
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -158,8 +175,7 @@
                                 <h4 class="font-color pb-4">EXPERIENCE</h4>
                                 <div class="card border1 rounded-5 mb-5" style="width: 100%;">
                                     <div class="card-body font-color2">
-                                        <p
-                                            class="fs-6 fw-bold btn border1 rounded-4 px-3 py-1 font-color2">
+                                        <p class="fs-6 fw-bold btn border1 rounded-4 px-3 py-1 font-color2">
                                             <span><i
                                                     class="ri-calendar-2-line fs-5 pe-2 font-color2 fw-normal"></i></span>
                                             2026 - Present
@@ -199,8 +215,7 @@
                                 <h4 class="font-color pb-4">EDUCATION</h4>
                                 <div class="card border1 rounded-5 mb-5" style="width: 100%;">
                                     <div class="card-body font-color2">
-                                        <p
-                                            class="fs-6 fw-bold btn border1 rounded-4 px-3 py-1 font-color2">
+                                        <p class="fs-6 fw-bold btn border1 rounded-4 px-3 py-1 font-color2">
                                             <span><i
                                                     class="ri-calendar-2-line fs-5 pe-2 font-color2 fw-normal"></i></span>
                                             2026 - 2029 (Expected)
@@ -241,6 +256,180 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- skill section  -->
+        <section class="container py-5" id="skill">
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 col-md-8 text-center">
+                    <h2 class="section-title display-5 mb-2">Technical Skills</h2>
+                    <p class="section-subtitle lead">Core competencies, tools, and languages powering my development
+                        workflow.</p>
+                    <hr class="w-25 mx-auto" style="border-color: var(--border-subtle); opacity: 1;">
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+
+                <!-- HTML Skill -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="skill-card p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="skill-icon-wrapper">
+                                <i class="ri-html5-fill"></i>
+                            </div>
+                            <h4 class="skill-title h5 mb-2">HTML</h4>
+                            <p class="skill-description mb-4">Semantic markup, accessibility standards, and modern web
+                                document structures.</p>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="small" style="color: var(--text-muted);">Proficiency</span>
+                                <span class="small" style="color: var(--text-accent);">95%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CSS Skill -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="skill-card p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="skill-icon-wrapper">
+                                <i class="ri-css3-fill"></i>
+                            </div>
+                            <h4 class="skill-title h5 mb-2">CSS</h4>
+                            <p class="skill-description mb-4">Responsive layouts, Flexbox, Grid, custom properties, and
+                                smooth animations.</p>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="small" style="color: var(--text-muted);">Proficiency</span>
+                                <span class="small" style="color: var(--text-accent);">90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Git Skill -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="skill-card p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="skill-icon-wrapper">
+                                <i class="ri-git-branch-fill"></i>
+                            </div>
+                            <h4 class="skill-title h5 mb-2">Git</h4>
+                            <p class="skill-description mb-4">Version control, branching strategies, collaboration
+                                workflows, and repository management.</p>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="small" style="color: var(--text-muted);">Proficiency</span>
+                                <span class="small" style="color: var(--text-accent);">85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- C Programming Skill -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="skill-card p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="skill-icon-wrapper">
+                                C
+                            </div>
+                            <h4 class="skill-title h5 mb-2">C Language</h4>
+                            <p class="skill-description mb-4">Low-level programming, memory management, data structures,
+                                and algorithmic logic.</p>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="small" style="color: var(--text-muted);">Proficiency</span>
+                                <span class="small" style="color: var(--text-accent);">80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bootstrap Skill -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="skill-card p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="skill-icon-wrapper">
+                                <i class="ri-bootstrap-line"></i>
+                            </div>
+                            <h4 class="skill-title h5 mb-2">Bootstrap</h4>
+                            <p class="skill-description mb-4">Rapid mobile-first responsive web design leveraging
+                                utility classes and pre-built components.</p>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="small" style="color: var(--text-muted);">Proficiency</span>
+                                <span class="small" style="color: var(--text-accent);">90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="..." class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
     </main>

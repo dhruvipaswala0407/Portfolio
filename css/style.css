@@ -1,18 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background-color: var(--bg-main);
 }
+
 header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: var(--bg-main); 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--bg-main);
 }
 
 :root {
@@ -22,88 +25,173 @@ header {
     --accent: #8C6D53;
     --text-primary: #F4EAE1;
     --text-secondary: #B8A89C;
-    --text-muted: #8E7D72;        
-  --text-highlight: #E6A068;    
-  --text-accent: #C29A78;     
-  --text-disabled: #5E5047;  
-  --text-on-accent: #121212;
+    --text-muted: #8E7D72;
+    --text-highlight: #E6A068;
+    --text-accent: #C29A78;
+    --text-disabled: #5E5047;
+    --text-on-accent: #121212;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-.font-color1{
+.font-color1 {
     color: var(--text-secondary);
 }
-.font-color{
-    color:var(--text-primary);
+
+.font-color {
+    color: var(--text-primary);
 }
+
 /* navbar  */
-.navbar{
+.navbar {
     background-color: var(--bg-card);
 }
-.border-1{
+
+.border-1 {
     border: 2px solid var(--border-subtle);
 }
-.nav-underline .nav-link:focus, .nav-underline .nav-link:hover {
+
+.nav-underline .nav-link:focus,
+.nav-underline .nav-link:hover {
     border-bottom-color: var(--text-secondary);
-    color:var(--text-secondary)
+    color: var(--text-secondary)
 }
-.btn{
+
+.btn {
     color: var(--text-primary);
-    background-color:var(--border-subtle);
+    background-color: var(--border-subtle);
     border-color: var(--accent);
 }
-.btn:hover{
+
+.btn:hover {
     color: var(--text-secondary);
-    background-color:var(--border-subtle);
+    background-color: var(--border-subtle);
     border-color: var(--border-subtle);
 }
+
 /* hero-section */
-.card{
+.card {
     background-color: var(--bg-card);
-    border:1px solid var(--border-subtle);
+    border: 1px solid var(--border-subtle);
 }
-.card-text{
-    color:var(--text-accent)
+
+.card-text {
+    color: var(--text-accent)
 }
-.font-color2{
-    color:var(--text-muted)
+
+.font-color2 {
+    color: var(--text-muted)
 }
-.breadcrumb-item{
-    color:var(--text-on-accent)
+
+.breadcrumb-item {
+    color: var(--text-on-accent)
 }
-.fram{
-    width: 350px;     
-  height: 400px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
+
+.fram {
+    width: 350px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
-.img{
-   width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
 /* About Me */
 
 .about-img {
-    background: radial-gradient(circle,rgba(163, 138, 124, 1) 0%, rgba(75, 56, 42, 1) 74%);
+    background: radial-gradient(circle, rgba(163, 138, 124, 1) 0%, rgba(75, 56, 42, 1) 74%);
 }
 
 .icon .icon-frame,
 .experience .card,
-.education .card ,.project-card,.hero-icon {
+.education .card,
+.project-card,
+.hero-icon {
     background: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
 }
-.icon .icon-frame:hover,.hero-icon:hover{
+
+.icon .icon-frame:hover,
+.hero-icon:hover {
     background-color: #fff;
 }
+
 .about-me {
     position: sticky;
     top: 100px;
     align-self: flex-start;
 }
+
 .icon .icon-frame {
     aspect-ratio: 1/1;
+}
+
+/* skill */
+.skill-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 1rem;
+    transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    height: 100%;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.skill-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background-color: var(--border-subtle);
+    color: var(--text-highlight);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.section-title {
+    color: var(--text-highlight);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.section-subtitle {
+    color: var(--text-secondary);
+}
+
+.skill-title {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.skill-description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.badge-custom {
+    background-color: var(--border-subtle);
+    color: var(--text-accent);
+    border: 1px solid var(--accent);
+    font-weight: 500;
+}
+.progress {
+    background-color: var(--border-subtle);
+    height: 8px;
+    border-radius: 4px;
+}
+
+.progress-bar {
+    background-color: var(--accent);
+    border-radius: 4px;
 }

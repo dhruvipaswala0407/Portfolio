@@ -1,0 +1,10 @@
+@media(max-width:575px){
+    .hero-sec-xs{
+        background-position:right;
+    }
+}
+@media(min-width:576px){
+    .hero-sec-s{
+        background-position:right;
+    }
+}
