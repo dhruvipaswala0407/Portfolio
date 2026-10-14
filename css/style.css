@@ -195,6 +195,10 @@ a {
     background-color: var(--accent);
     border-radius: 4px;
 }
+.line-hr{
+    border-color: var(--border-subtle); 
+    opacity: 1;
+}
 /* project  */
 .projects .card{
     height: 90vh;
