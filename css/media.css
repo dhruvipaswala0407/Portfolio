@@ -1,10 +1,18 @@
-@media(max-width:575px){
-    .hero-sec-xs{
-        background-position:right;
+
+@media (min-width: 576px) {
+   .font-sm-1{font-size:0.5rem;}
+   .d-sm-flex{display:flex}
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+    .d-xl-none{
+        display:none;
     }
 }
-@media(min-width:576px){
-    .hero-sec-s{
-        background-position:right;
-    }
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+   
 }
