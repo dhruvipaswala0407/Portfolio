@@ -35,9 +35,4 @@ This personal portfolio highlights my software development journey, featuring an
 
 ---
 
-## Getting Started Locally
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/dhruvipaswala0407/Portfolio.git](https://github.com/dhruvipaswala0407/Portfolio.git)
    
